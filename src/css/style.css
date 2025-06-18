@@ -1,0 +1,102 @@
+*{
+
+box-sizing: border-box;
+
+}
+
+html{
+scroll-behavior: smooth;
+
+}
+
+
+body{
+
+margin:0;
+background-color: rgb(251, 251, 251)    ;
+}
+
+
+:root{
+
+--color_N1:rgb(149, 0, 0);
+--color_N2: rgb(86, 2, 2);
+
+}
+
+.encabezado{
+width: 100%;
+height: 9rem;
+padding:2rem;
+
+
+}
+
+.encabezado nav{
+
+width: 30%;
+padding: auto 2rem;
+
+
+}
+
+.menu{
+padding: 0.2rem 0rem;
+display:flex;
+justify-content: space-around;
+gap:2%;
+background-color: var(--color_N1) ;
+border-radius: 0.3rem;
+position: relative;
+}
+
+
+.menu li{
+
+list-style-type: none;
+
+}
+
+
+.menu li a{
+
+text-decoration: none;
+color:white;
+font-weight: bolder;
+}
+
+.menu li a:hover{
+    color:var(--color_N2);
+}
+
+
+main .consult{
+
+width: 97%;
+height: 20rem;
+background-color: rgba(0, 0, 0, 0.172);
+display: flex;
+justify-content: start;
+align-items: center;
+padding: 2rem;
+}
+
+main .sub-box{
+    width:50%;
+    height:15rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20%;
+    background-color: white;
+    border-radius: 0.2rem;
+
+}
+
+.box-form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+
+}
