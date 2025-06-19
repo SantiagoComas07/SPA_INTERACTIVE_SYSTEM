@@ -12,8 +12,11 @@ const resultCourseA=document.getElementById("result_A")
 const resultCourseB=document.getElementById("result_B")
 const resultCourseC=document.getElementById("result_C")
 
-
 let message
+let answerA
+let answerB
+let answerC
+let mainFlag
 let flag
 
 function identificar(name, age){    
@@ -23,6 +26,7 @@ age= parseInt(age);
 if (isNaN(age)){
     console.error("Error...Informacion invalida");
     message= `Hola ${name} su información es invalida`
+    mainFlag=true
 
 }else if(age >=18){
     message=`Hola ${name}, eres mayor de edad. ¡Preparate para las grandes oportunidades en programación!`
@@ -33,21 +37,24 @@ if (isNaN(age)){
 }}
 
 
-function showResultCourses(ageUser,answerA,answerB,answerC, confirm){
-    ageUser= parseInt(ageUser);
-    if(isNaN(ageUser)){
-      //Sin funciones por el momento
+function showResultCourses(palabra, palabraA){
+    if(mainFlag==true){
+      console.warn("Algo pasa mal")
     }else{
-        if(confirm){
-            answerA.textContent='Desarrollo web avanzado'
-            answerB.textContent='Desarrollo web avanzado'
-            answerC.textContent='Desarrollo web avanzado'
+        if(flag==true){
+            console.warn("TODO EN ORDEN")
+            answerA='Desarrollo web avanzado------------------------'
+            answerB='Base de datos con Java--------------------------'
+            answerC='Inteligencia artificial con python -------------'
         }else{
-            answerA.textContent='Logica de programación'
-            answerB.textContent='Logica de programación'
-            answerC.textContent='Logica de programación'
-    
+
+            answerA='Logica de programación'
+            answerB='Logica de programación'
+            answerC='Logica de programación'
+
         }
+
+
     }
 
 
@@ -61,7 +68,10 @@ btn.addEventListener('click', ()=>{
     result.textContent= message
     box_consult.style.display="none"
     box_consult_back.style.display="block"
-    showResultCourses( resultCourseA, resultCourseB, resultCourseB, flag)
+    showResultCourses( ageUser, flag)
+    resultCourseA.textContent=answerA
+    resultCourseB.textContent=answerB
+    resultCourseC.textContent=answerC
 })
 
 btn_back.addEventListener('click', ()=>{

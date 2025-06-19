@@ -7,12 +7,14 @@ box-sizing: border-box;
 html{
 scroll-behavior: smooth;
 margin: 0;
+
 }
 
 
 body{
 
 margin:0;
+
 background-color: rgb(251, 251, 251)    ;
 }
 
@@ -70,10 +72,18 @@ font-weight: bolder;
 }
 
 
+main{
+
+display:flex;
+justify-content: center;
+
+}
+
+
 main .consult{
 
 width: 97%;
-height: 22rem;
+height: 24rem;
 background-color: rgba(0, 0, 0, 0.172);
 display: flex;
 justify-content: space-evenly;
@@ -83,9 +93,9 @@ margin-top:5rem;
 }
 
 main .sub-box{
-    width:21%;
-    height: 17rem;
-   padding: 0.5rem ;
+    width:18%;
+    height: 23rem;
+    padding: 0.5rem ;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -94,6 +104,20 @@ main .sub-box{
     border-radius: 0.2rem;
 
 }
+
+.box-consult{
+text-align: center;
+
+
+
+} 
+
+
+.box-consult .box-form{
+    margin: 0.8rem 0rem;
+
+
+} 
 
 .box-form{
 
@@ -104,15 +128,6 @@ main .sub-box{
 
 }
 
-.box-consult{
-text-align: center;
-
-}
-
-
-
-
-
 .box-input{
 
     border: none;
@@ -122,28 +137,32 @@ text-align: center;
 }
 
 .box-img img{
-width:22rem;
+width:24rem;
 
 
 
 }
 
+.box-btn input{
+width: 80%;
+border: none;
+padding: 0.2rem 0.5rem;
+border-radius: 0.3rem;
+text-align: center;
+
+}
 
 
 /* Respuesta */
 
 
 
-.box-back .btn_back{
-width: 100%;
-
-
+.consult .box-back{
+    text-align: center;
 }
 
-.box-back{
-
-    text-align: center;
-
+.box-back .btn_back{
+width: 100%;
 }
 
 
@@ -157,14 +176,24 @@ padding: 0.3rem;
 font-size: 0.7rem;
 }
 
-.box-btn input{
-width: 80%;
-border: none;
-padding: 0.2rem 0.5rem;
-border-radius: 0.3rem;
-text-align: center;
+.card{
+
+min-width: 13rem;
+min-height: 4rem;
+max-height: 3rem;
+background-color: rgba(175, 175, 175, 0.172);
+padding: 0.2rem;
+margin: 1rem 0rem;
+font-size: 0.6rem;
+}
+
+.card h5{
+font-size: 0.7rem;
+margin: 0.1rem;
+
 
 }
+
 
 
 
@@ -176,7 +205,5 @@ color:white;
 display: flex;
 justify-content: center;
 align-items: center;
-margin-top: 7rem;
-
-
+margin-top: 12rem;
 }
