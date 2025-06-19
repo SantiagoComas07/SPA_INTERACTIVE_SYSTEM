@@ -18,7 +18,9 @@
     </header>
     <main>
         <section id="consult" class="consult">
-            <div class="sub-box">
+            <div class="sub-box" id="sub-box">
+                <article id="box-consult" class="box-consult"> 
+                    <p>INFORMACION DE USER</p>
                     <article class="box-form">
                         <label for="">name</label>
                         <input class="box-input box-input-name" id="name" class="box-name" type="text">
@@ -27,11 +29,36 @@
                         <label for="">age</label>
                         <input class=" box-input  box-input-age" id="age" class="box-age" type="text">
                     </article>
-                    <article  class="box-form">
-                        <input type="submit" placeholder="enviar" id="enviar">
-                        <div id="result"></div>
+                    <div  class="box-btn">
+                        <input type="submit" placeholder="enviar" id="enviar">                        
+                    </div>
+                </article>
+
+
+
+                    <article class="box-back" id="box-back">
+                        <div class="result" id="result"></div>
+                        <article class="card">
+                            <H5>CURSO 1</H5>
+                            <div class="result_courses" id="result_A"></div>
+                        </article>
+                        <article class="card">
+                            <H5>CURSO 1</H5>
+                            <div class="result_courses" id="result_B"></div>
+                        </article>
+                        <article class="card">
+                            <H5>CURSO 1</H5>
+                            <div class="result_courses" id="result_C"></div>
+                        </article>
+                        <div class="box-btn">
+                          <input type="submit" placeholder="Back" id="back">
+                        </div>
                     </article>
-            </div>
+            
+            
+            
+            
+                </div>
             <div class="box-img"><img src="/src/img/sales_asistant.png" alt=""></div>
         </section>
     </main>
