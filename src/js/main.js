@@ -12,14 +12,13 @@ const resultCourseA=document.getElementById("result_A")
 const resultCourseB=document.getElementById("result_B")
 const resultCourseC=document.getElementById("result_C")
 
-
 let message
 let answerA
 let answerB 
 let answerC
 let mainFlag
 let flag
-let real = true;
+let real = true
 
 
 function identificar(name, age){    
@@ -72,8 +71,11 @@ function showResultCourses(variable, consfirmation, confirmationTwo){
 
 }
 
+
+
 // This code line is to ocult the box of consult
 box_consult_back.style.display="none"
+
 
 btn.addEventListener('click', ()=>{
     identificar(userName.value, userAge.value)

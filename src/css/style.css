@@ -223,37 +223,6 @@ main .sub-box{
 }
 
 
-
-@media(max-width: 1000px){
-
-main .consult{
-    height: 55rem;
-    flex-direction: column-reverse;
-    gap: 5%;
-    z-index: 1000
-
-
-}
-
-main .sub-box{
-
-width: 18rem;
-
-
-}
-
-
-}
-
-/* @media(max-width: 900px){
-    main .consult{
-
-        height: 55rem;
-
-    }
-} */
-
-
 .box-consult{
 text-align: center;
 }
@@ -296,15 +265,63 @@ justify-content: center;
 }
 
 
-.box-img img{
+#sale_asistant{
+    display: block;
+    width:24rem;
+}
+
+#sale_asistant_responsive{
+display:none;
 width:24rem;
 }
 
 .box-img-message img{
+    display: block;
     width: 14rem;
    
 
 }
+
+
+@media(max-width: 1000px){
+
+main .consult{
+    height: 55rem;
+    flex-direction: column-reverse;
+    z-index: 1000
+
+
+}
+
+main .sub-box{
+
+width: 18rem;
+}
+
+#sale_asistant{
+display:none;
+}
+
+
+.box-img{
+margin:0;
+
+}
+
+#sale_asistant_responsive{
+display:block;
+transform: translateY(1.25rem);
+}
+
+.box-img-message img{
+    display: none;
+
+   
+
+}
+}
+
+
 
 
 .box-btn input{
