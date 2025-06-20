@@ -31,10 +31,10 @@ if (isNaN(age)){
     mainFlag=true
 
 }else if(age >=18){
-    message=`Hola ${name}, eres mayor de edad. ¡Preparate para las grandes oportunidades en programación!`
+    message=`Hello ${name}, You're of legal age. Take advantage of great opportunities with our professional courses!`
     flag=true
 }else{
-    message=`Hola ${name}, eres menor de edad. ¡Sigue aprendiendo y disfrutando del codigo!`
+    message=`Hello ${name}, You're a minor. Start with the basics!`
     flag=false
 }}
 
@@ -45,13 +45,13 @@ function showResultCourses(palabra, palabraA){
     }else{
         if(flag==true){
             console.warn("TODO EN ORDEN")
-            answerA='Desarrollo web avanzado------------------------ Hola mundp'
-            answerB='Base de datos con Java--------------------------'
-            answerC='Inteligencia artificial con python -------------'
+            answerA='React Developer Essentials'
+            answerB='Cloud Certified Foundations'
+            answerC='Introduction to Artificial Intelligence: Learn to Think Like a Machine'
         }else{
-            answerA='Fundamentos de programación en python'
-            answerB='Aprendiendo a programar en Roblox'
-            answerC='Webinar de buenas practicas en ciberseguridad para la vida'
+            answerA='HTML: Build the Structure of the Web'
+            answerB='Smart Web Navigation: Master the Internet Safely and Efficiently'
+            answerC='Python Programming: From Zero to Backend Developer'
 
         }
 
