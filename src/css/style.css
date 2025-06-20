@@ -103,6 +103,7 @@ color: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
+font-family: var(--font_N1);
 
 }
 .box-start-subcontent figure {

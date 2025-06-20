@@ -1,2 +1,33 @@
 # SPA_INTERACTIVE_SYSTEM
-This interactive system is designed to determine whether a user is eligible to enroll in a course based on their age.  When a user interacts with the system, they are asked to enter their age. The system then checks if the user is a minor (under 18) or an adult (18 or older).
+
+## Summary
+
+This system is designed to help you find the most suitable development courses based on your age and interests in programming and software development. When interacting with the system, you will be asked to provide your age and interests, and then you will be categorized as either a **minor** (under 18 years old) or an **adult** (18 years old or older).
+
+## Project Features
+
+* Consult courses depending on age
+* General information about programming courses
+
+
+## technology used
+
+* frontend: HTML, CSS, JavaScript
+
+## Project structure
+
+![alt text](/src/img/Project_structure.png)
+
+## License
+
+* [GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+
+
+## Information about the project author
+
+#### Coder: Santiago Andrés comas Durán
+#### C.C: 1047041927
+#### Clan: Caiman
+#### Correo: santiagocomas07d@gmail.com
+
