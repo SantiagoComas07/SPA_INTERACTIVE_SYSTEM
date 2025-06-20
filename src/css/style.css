@@ -32,6 +32,7 @@ background-color: rgb(251, 251, 251)    ;
 width: 100%;
 height: 9rem;
 padding:2rem;
+background-color: var(--color_N1);
 
 
 }
@@ -49,7 +50,6 @@ padding: 0.2rem 0rem;
 display:flex;
 justify-content: space-around;
 gap:2%;
-background-color: var(--color_N1) ;
 border-radius: var(--border_N1);
 position: relative;
 }
@@ -76,6 +76,56 @@ font-weight: bolder;
 
 /* main section */
 
+/* Sale Asistant */
+
+
+.box-ia{
+
+width:4.5rem;
+height: 4.5rem;
+background-color: rgb(255, 255, 255);
+border: 5px solid var(--color_N1);
+border-radius: var(--border_N1);
+padding: 1rem;
+position:sticky;
+left: 90%;
+bottom: 2rem;
+
+}
+
+.box-ia img{
+
+width:100%;
+
+}
+
+
+
+.box-ia::before{
+
+content:"";
+width: 6.5rem;
+height: 0;
+position: absolute;
+top: 0;
+left: -10rem;
+padding: 0.5rem;
+transition: height 0.1s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out ;
+margin-top:0.8rem;
+}
+
+.box-ia:hover::before{
+height:1rem;
+border: 3px solid var(--color_N1);
+content:"Virtual Asistant";
+background-color: white;
+}
+
+
+
+
+
+
 
 .start{
 width:100%
@@ -86,11 +136,12 @@ width:100%
 .box-start-subcontent{
 
 width:80%;
-background-color: blue;
 margin: 5% 10%;
 display: flex; 
 border-radius: var(--border_N1);
 }
+
+
 
 
 .box-start-welcome{
@@ -106,6 +157,8 @@ justify-content: center;
 font-family: var(--font_N1);
 
 }
+
+
 .box-start-subcontent figure {
 width: 50%;
 margin:0;
@@ -115,6 +168,29 @@ background-size: cover;
 }
 
 
+@media(max-width:1000px){
+
+.box-start-subcontent{
+    height: 40rem;
+flex-direction: column;
+}
+
+.box-start-welcome{
+width:100%;
+height: 40%;
+
+}
+
+.box-start-subcontent figure{
+
+width:100%;
+height: 60%;
+
+
+}}
+
+
+
 main .consult{
 
 width: 97%;
@@ -122,12 +198,16 @@ height: 24rem;
 margin: 5% auto;
 background-color: rgba(0, 0, 0, 0.172);
 display: flex;
+flex-direction: row;
 justify-content: space-evenly;
 align-items: center;
 padding: 2rem;
 margin-top:5rem;
 font-family: var(--font_N1);
 }
+
+
+
 
 main .sub-box{
     width:25%;
@@ -141,6 +221,38 @@ main .sub-box{
     border-radius: 0.2rem;
 
 }
+
+
+
+@media(max-width: 1000px){
+
+main .consult{
+    height: 55rem;
+    flex-direction: column-reverse;
+    gap: 5%;
+    z-index: 1000
+
+
+}
+
+main .sub-box{
+
+width: 18rem;
+
+
+}
+
+
+}
+
+/* @media(max-width: 900px){
+    main .consult{
+
+        height: 55rem;
+
+    }
+} */
+
 
 .box-consult{
 text-align: center;
@@ -182,6 +294,7 @@ justify-content: center;
 
 
 }
+
 
 .box-img img{
 width:24rem;
@@ -313,6 +426,40 @@ flex-direction: column;
 justify-content: space-around;
 }
 
+
+
+
+@media(max-width:1000px){
+
+.box-course-content{
+height: 260rem;
+flex-wrap: nowrap;
+flex-direction: column;
+align-items: center;
+gap:2%;
+justify-content: start;
+}
+
+.card-course{
+width: 70%;
+
+}
+}
+
+
+@media(max-width:600px){
+
+.card-course{
+width: 90%;
+
+}
+
+}
+
+
+
+
+
 /* Animation to make a decision amoung elements */
 
 .card-course::before{
@@ -384,7 +531,32 @@ height: 13rem;
 background-color: var(--color_N1);
 color:white;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: 12rem;
+
+}
+
+
+
+
+.lista-icons{
+display: flex;
+justify-content: space-around;
+gap: 2rem;
+padding:0;
+}
+
+
+.lista-icons li{
+list-style-type: none;
+
+}
+
+.lista-icons img{
+
+width: 2rem;
+
+
 }
