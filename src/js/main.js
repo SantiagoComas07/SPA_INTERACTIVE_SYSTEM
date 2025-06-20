@@ -1,5 +1,5 @@
-const nameUser=document.getElementById("name")
-const ageUser=document.getElementById("age")
+const userName=document.getElementById("name")
+const userAge=document.getElementById("age")
 const btn = document.getElementById("enviar")
 const box_consult = document.getElementById("box-consult")
 const box_consult_back= document.getElementById("box-back")
@@ -12,12 +12,14 @@ const resultCourseA=document.getElementById("result_A")
 const resultCourseB=document.getElementById("result_B")
 const resultCourseC=document.getElementById("result_C")
 
+
 let message
 let answerA
-let answerB
+let answerB 
 let answerC
 let mainFlag
 let flag
+
 
 function identificar(name, age){    
 
@@ -39,18 +41,17 @@ if (isNaN(age)){
 
 function showResultCourses(palabra, palabraA){
     if(mainFlag==true){
-      console.warn("Algo pasa mal")
+      console.error("Insufficient information")
     }else{
         if(flag==true){
             console.warn("TODO EN ORDEN")
-            answerA='Desarrollo web avanzado------------------------'
+            answerA='Desarrollo web avanzado------------------------ Hola mundp'
             answerB='Base de datos con Java--------------------------'
             answerC='Inteligencia artificial con python -------------'
         }else{
-
-            answerA='Logica de programación'
-            answerB='Logica de programación'
-            answerC='Logica de programación'
+            answerA='Fundamentos de programación en python'
+            answerB='Aprendiendo a programar en Roblox'
+            answerC='Webinar de buenas practicas en ciberseguridad para la vida'
 
         }
 
@@ -64,14 +65,21 @@ function showResultCourses(palabra, palabraA){
 box_consult_back.style.display="none"
 
 btn.addEventListener('click', ()=>{
-    identificar(nameUser.value, ageUser.value)
+    identificar(userName.value, userAge.value)
     result.textContent= message
+    if (mainFlag ==true){
+        result.style.color="red"
+        result.style.fontWeight="bold"
+        }else{
+            result.style.color="black"
+        }
     box_consult.style.display="none"
     box_consult_back.style.display="block"
-    showResultCourses( ageUser, flag)
+    showResultCourses( userAge, flag)
     resultCourseA.textContent=answerA
     resultCourseB.textContent=answerB
     resultCourseC.textContent=answerC
+
 })
 
 btn_back.addEventListener('click', ()=>{
