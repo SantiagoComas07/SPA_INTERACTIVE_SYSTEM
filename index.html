@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<meta name="description" content="Dev School is a website that helps people learn programming.">
+    <meta name="keywords" content="study, learn, programing, future, development">
+    <meta name="sitedomain" content="https://github.com/SantiagoComas07">  
+    <meta name="organization" content="SantiagoComas07">
+    <meta name="author" content="Santiago andrés Comas Durán">
+    <meta name="designer" content="Santiago andrés Comas Durán">
+    <meta name="copyright" content="© 2025 SantiagoComas07. All rights reserved">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+    <meta name="theme-color" content="#ffffff">
+<title>Document</title>
+</head>
+<body>
+    <!-- This is the bar navegation of the website -->
+    <header class="encabezado">
+        <nav>
+            <ul class="menu">
+                <li><a href="#start"> <span class="text"> Start </span><img src="/src/img/people.png" alt="" class="icon"></a></li>
+                <li><a href="#consult"><span class="text">Test</span><img src="/src/img/test.png" alt="" class="icon"></a></li>
+                <li><a href="#course"><span class="text"> available courses</span><img src="/src/img/graduation.png" class="icon" alt=""></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- This section is to welcome -->
+        <section class="start" id="start">
+            <article class="box-start-subcontent">
+                <article class="box-start-welcome">
+                    <h1>DEV SCHOOL</h1>
+                    <div><p>At Dev School, we're your strategic 
+                        partner in the world of software development.
+                        We're dedicated to nurturing digital talent through 
+                        high-quality courses, designed to shape the next
+                        generation of tech professionals.</p></div>
+                </article>
+                <figure></figure>
+            </article>
+        </section>
+        <section id="consult" class="consult">
+            <div class="sub-box" id="sub-box">
+                    <!-- Main box to get into information-->
+                    <article id="box-consult" class="box-consult"> 
+                        <p>DEV SCHOOL</p>
+                        <article class="box-form">
+                            <label for="">NAME</label>
+                            <input class="box-input box-input-name" id="name" class="box-name" type="text">
+                        </article>
+                        <article class="box-form">
+                            <label for="">AGE</label>
+                            <input class=" box-input  box-input-age" id="age" class="box-age" type="text">
+                        </article>
+                        <div  class="box-btn">
+                            <input type="submit" name="Back" class="btn" id="enviar" value="Calcular">                        
+                        </div>
+                    </article>
+                    <!-- back box to show answers -->
+                        <article class="box-back" id="box-back">
+                            <div class="result" id="result"></div>
+                            <article class="card">
+                                <H5>COURSE 1</H5>
+                                <div class="result_courses" id="result_A"></div>
+                                <div class="ready">available</div>
+                            </article>
+                            <article class="card">
+                                <H5>COURSE 2</H5>
+                                <div class="result_courses" id="result_B"></div>
+                                <div class="ready">available</div>
+                            </article>
+                            <article class="card">
+                                <H5>COURSE 3</H5>
+                                <div class="result_courses" id="result_C"></div>
+                                <div class="not-ready">Not available</div>
+                            </article>
+                            <div class="box-btn">
+                            <input type="submit" class="btn" name="Back" id="back" value="Back">
+                            </div>
+                        </article>
+                    </div>
+                    <!-- Images: Asistant to presesent the form-->
+                    <div class="box-imgs">
+                        <article class="box-img">
+                            <img src="/src/img/sales_asistant.png" alt="sales_asistant" id="sale_asistant">
+                            <img src="/src/img/sale_asistant_responsive.png" alt="sales_asistant" id="sale_asistant_responsive">
+                        </article>
+                        <article class="box-img box-img-message"><img src="./src/img/comentario.png" alt=""></article>
+                    </div>
+         </section>
+        <!-- This is the section of the courses -->
+        <section class="course" id="course">
+            <div class="box-titulo-course"><h2>DEV COURSES</h2></div>
+            <div class="box-slogan-course"><p>Discover a world of opportunities only with one click</p></div>
+            <div class="box-course-content">
+                <!-- This is a course-card to offer the knowledge -->
+                    <article class="card-course card-course-one">
+                        <div class="box-card-title">
+                            <figure>
+                                <img src="./src/img/html.png" alt="Html">
+                            </figure>
+                            <h2>HTML: Build the Structure of the Web <span>100%</span></h2>
+                        </div>
+                        <p>Master the basics of HTML and learn how to create the foundational structure of any website.</p>
+                    </article>
+                <article class="card-course card-course-two">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/css.png" alt="Html">
+                        </figure>
+                        <h2>CSS Essentials: Design Beautiful, Responsive Websites<span>100%</span></h2>
+                    </div>
+                    <p>In this course You’ll learn how to style content, use colors,animations, and make your sites responsive across all devices using Flexbox and Grid.</p>
+                </article>
+                <article class="card-course card-course-three">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/py.png" alt="Html">
+                        </figure>
+                        <h2>Python Programming: From Zero to Backend Developer <span>100%</span></h2>
+                    </div>
+                    <p>Learn Python from the ground up and start coding like a pro. This course teaches you variables, loops, functions, and object-oriented programming.</p>
+                </article>
+                <article class="card-course card-course-four">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/IA.png" alt="Html">
+                        </figure>
+                        <h2>Introduction to Artificial Intelligence: Learn to Think Like a Machine <span>100%</span></h2>
+                    </div>
+                    <p>Explore the fascinating world of AI, from basic concepts to real-world applications.Learn about machine learning, neural networks, and data-driven.</p>
+                </article>
+                <article class="card-course card-course-five">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/bases_datos.png" alt="Html">
+                        </figure>
+                        <h2>SQL Mastery: Manage and Query Data Like a Pro <span>100%</span></h2>
+                    </div>
+                    <p>Understand the power of databases by learning SQL from the ground up. This course teaches you how to store, manage, and retrieve data using real-world querie</p>
+                </article>
+                <article class="card-course card-course-six">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/web.png" alt="Html">
+                        </figure>
+                        <h2>Smart Web Navigation: Master the Internet Safely and Efficiently <span>100%</span></h2>
+                    </div>
+                    <p>Learn how to browse, search, and interact with the web intelligently. </p>
+                </article>
+                <article class="card-course card-course-seven">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/Web_development.png" alt="Html">
+                        </figure>
+                        <h2>Modern Web Development: Build Full-Stack Applications <span>100%</span></h2>
+                    </div>
+                    <p>Discover how to develop complete websites and applications using the latest web technologies. Learn frontend (HTML, CSS, JavaScript) and backend.</p>
+                </article>
+                <article class="card-course card-course-eight">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/diagramas_flujo.png" alt="Html">
+                        </figure>
+                        <h2>Business Flowcharts: Visualize and Optimize Your Processes <span>100%</span></h2>
+                    </div>
+                    <p>Learn how to design clear, effective flowcharts that map out business processes, decision trees, and workflows.</p>
+                </article>
+                <article class="card-course card-course-gold">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/react.png" alt="Html">
+                        </figure>
+                        <h2>React Developer Essentials <span>100%</span></h2>
+                    </div>
+                    <p>Master the fundamentals of React, including components, state, props, and hooks. Build dynamic, responsive web apps and take the first step toward becoming a certified front-end developer.</p>
+                </article>
+                <article class="card-course card-course-gold">
+                    <div class="box-card-title">
+                        <figure>
+                            <img src="./src/img/cloud.png" alt="Html">
+                        </figure>
+                        <h2>Cloud Certified Foundations <span>100%</span></h2>
+                    </div>
+                    <p>Learn the core principles of cloud computing, services (IaaS, PaaS, SaaS), and prepare for leading certifications like AWS, Azure, or Google Cloud.</p>
+                </article>
+            </div>
+        </section>
+            <!-- This is the link to talk width the virtual asistant -->
+            <section id="box-ia" class="box-ia">
+               <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><img src="./src/img/consultant.png" alt="Consultant"></a>
+            </section>
+           
+    </main>
+    <!-- The footer of the website. It content the social-networks-->
+    <footer>
+        <ul class="lista-icons">
+            <li><a href="#"><img src="/src/svg/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="/src/svg/instagram.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="/src/svg/linkedin.svg" alt="facebook"></a></li>
+        </ul>
+        <p>&copy 2025 interactive Sistem</p>
+    </footer>
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

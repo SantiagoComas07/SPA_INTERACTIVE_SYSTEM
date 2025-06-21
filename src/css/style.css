@@ -1,0 +1,623 @@
+*{
+
+box-sizing: border-box;
+
+}
+
+html{
+scroll-behavior: smooth;
+margin: 0;
+
+}
+
+
+body{
+
+margin:0;
+
+background-color: rgb(251, 251, 251)    ;
+}
+
+
+:root{
+
+--color_N1:rgb(149, 0, 0);
+--color_N2: rgb(86, 2, 2);
+--color_N3:#7FFF00;
+--font_N1:"Rubik", sans-serif;
+--border_N1: 0.2rem;
+}
+
+.encabezado{
+width: 100%;
+height: 9rem;
+padding:2rem;
+background-color: var(--color_N1);
+
+
+}
+
+.encabezado nav{
+
+width: 20rem;
+padding: auto 2rem;
+
+
+}
+
+.menu{
+padding: 0.2rem 0rem;
+display:flex;
+justify-content: space-around;
+gap:2%;
+border-radius: var(--border_N1);
+position: relative;
+font-family: var(--font_N1);
+}
+
+
+.menu li{
+
+list-style-type: none;
+
+}
+
+
+.menu li a{
+
+text-decoration: none;
+color:white;
+font-weight: bolder;
+}
+
+.menu li a:hover{
+    color:var(--color_N2);
+}
+
+.icon{
+display:none;
+width:2rem;
+}
+.text{
+display:block;
+
+
+}
+
+
+
+
+
+@media(max-width: 700px){
+
+.icon{
+display:block;
+
+}
+.text{
+display:none;
+
+}
+
+.encabezado{
+
+display:flex;
+justify-content: center;
+
+}
+
+}
+
+
+
+
+
+
+
+
+/* main section */
+
+/* Box-ia for the vistual Sale Asistant */
+
+
+.box-ia{
+
+width:4.5rem;
+height: 4.5rem;
+background-color: rgb(255, 255, 255);
+border: 5px solid var(--color_N1);
+border-radius: var(--border_N1);
+padding: 1rem;
+position:sticky;
+left: 90%;
+bottom: 2rem;
+
+}
+
+.box-ia img{
+
+width:100%;
+
+}
+
+
+
+.box-ia::before{
+
+content:"";
+width: 6.5rem;
+height: 0;
+position: absolute;
+top: 0;
+left: -10rem;
+padding: 0.5rem;
+transition: height 0.1s ease-in-out, background-color 0.2s ease-in-out, border 0.2s ease-in-out ;
+margin-top:0.8rem;
+}
+
+.box-ia:hover::before{
+height:1rem;
+border: 3px solid var(--color_N1);
+content:"Virtual Asistant";
+background-color: white;
+}
+
+
+.start{
+width:100%
+
+
+}
+
+.box-start-subcontent{
+
+width:80%;
+margin: 5% 10%;
+display: flex; 
+border-radius: var(--border_N1);
+}
+
+
+
+
+.box-start-welcome{
+
+width: 50%;
+height: 13rem;
+padding: 2rem;
+background-color:var(--color_N1);
+color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-family: var(--font_N1);
+
+}
+
+
+.box-start-subcontent figure {
+width: 50%;
+margin:0;
+background-image: url('/src/img/welcome.png');
+background-position: left top;
+background-size: cover;
+}
+
+
+@media(max-width:1000px){
+
+.box-start-subcontent{
+    height: 40rem;
+flex-direction: column;
+}
+
+.box-start-welcome{
+width:100%;
+height: 40%;
+
+}
+
+.box-start-subcontent figure{
+
+width:100%;
+height: 60%;
+
+
+}}
+
+
+
+main .consult{
+
+width: 97%;
+height: 24rem;
+margin: 5% auto;
+background-color: rgba(0, 0, 0, 0.172);
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+padding: 2rem;
+margin-top:5rem;
+font-family: var(--font_N1);
+}
+
+
+
+
+main .sub-box{
+    width:25%;
+    height: 23rem;
+    padding: 0.5rem ;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: white;
+    border-radius: 0.2rem;
+
+}
+
+
+.box-consult{
+text-align: center;
+}
+.box-consult p{
+font-weight:600;
+color: var(--color_N2);
+
+}
+
+.box-consult .box-form{
+    margin: 0.8rem 0rem;
+
+
+} 
+
+.box-form{
+
+    display: flex;
+    flex-direction: column;
+    gap: 50%;
+    margin: 1.3rem;    
+
+}
+
+.box-input{
+
+    border: none;
+    padding:0.5rem  0.5rem;
+    background-color: rgba(175, 175, 175, 0.172);
+    
+}
+
+
+.box-imgs{
+display: flex;
+align-items: start;
+justify-content: center;
+
+
+}
+
+
+#sale_asistant{
+    display: block;
+    width:24rem;
+}
+
+#sale_asistant_responsive{
+display:none;
+width:24rem;
+}
+
+.box-img-message img{
+    display: block;
+    width: 14rem;
+   
+
+}
+
+
+@media(max-width: 1000px){
+
+main .consult{
+    height: 55rem;
+    flex-direction: column-reverse;
+    z-index: 1000
+
+
+}
+
+main .sub-box{
+
+width: 18rem;
+}
+
+#sale_asistant{
+display:none;
+}
+
+
+.box-img{
+margin:0;
+
+}
+
+#sale_asistant_responsive{
+display:block;
+transform: translateY(1.25rem);
+}
+
+.box-img-message img{
+    display: none;
+
+   
+
+}
+}
+
+
+@media(max-width: 420px){
+
+
+#sale_asistant_responsive{
+    width: 20rem;
+    transform: translateY(2.7rem);
+    z-index: 2000;
+}
+
+}
+
+.box-btn input{
+    width: 80%;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    
+    }
+
+
+.box-btn .btn{
+width: 100%;
+border: none;
+padding: 0.5rem 0.7rem;
+border-radius: 0.3rem;
+text-align: center;
+color: white;
+background-color: var(--color_N1);
+
+}
+.box-btn .btn:hover{
+    background-color: var(--color_N2);
+    cursor: pointer;
+}
+
+
+/* Back box of the page */
+
+.consult .box-back{
+    text-align: center;
+}
+
+.box-back .btn_back{
+width: 100%;
+}
+
+/* Box of result */
+.result{
+
+min-width: 13rem;
+min-height: 2rem;
+max-height: 3rem;
+background-color: rgba(175, 175, 175, 0.172);
+padding: 0.3rem;
+font-size: 0.7rem;
+}
+
+/* Cards of the box information */
+.card{
+
+min-width: 13rem;
+min-height: 4rem;
+max-height: 3rem;
+background-color: rgba(175, 175, 175, 0.172);
+padding: 0.2rem;
+margin: 1rem 0rem;
+font-size: 0.6rem;
+}
+
+.card h5{
+font-size: 0.7rem;
+margin: 0.1rem;
+
+
+}
+
+/*  section - course */
+
+.course{
+
+    width: 90%;
+    margin: 5% auto;
+    font-family: var(--font_N1);
+}
+
+.box-titulo-course{
+  width: 100%; 
+  text-align: center; 
+}
+.box-titulo-course h2{
+    min-width: 11rem;
+    color: var(--color_N1); 
+  }
+.box-slogan-course{
+    width: 100%; 
+    text-align: center; 
+}
+
+.box-slogan-course p{
+color: var(--color_N2);
+font-size:1.4rem;
+}
+  
+
+.box-course-content{
+
+width:100%;
+height: 130rem;
+padding: 3rem;
+display: flex;
+justify-content: center;
+gap: 4%;
+flex-wrap: wrap;
+
+}
+
+.card-course{
+    width:45%;
+background-color: rgb(255, 255, 255);
+padding: 0.7rem;
+border-radius: 0rem 0.5rem 0.5rem 0rem;
+border: 1.5px solid var(--color_N2);
+position: relative;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+
+
+@media(max-width:1000px){
+
+.box-course-content{
+height: 260rem;
+flex-wrap: nowrap;
+flex-direction: column;
+align-items: center;
+gap:2%;
+justify-content: start;
+}
+
+.card-course{
+width: 70%;
+
+}
+}
+
+
+@media(max-width:600px){
+
+.card-course{
+width: 90%;
+
+}
+
+}
+
+
+
+
+
+/* Animation to make a decision amoung elements */
+
+.card-course::before{
+content: "";
+width:0;
+height: 100%;
+background-color: var(--color_N1);
+position: absolute;
+top: 0;
+left: 0;
+transition: width 0.2s ease ;
+}
+
+.card-course-gold{
+border: 3px solid #FEBE10;
+
+}
+.card-course-gold .box-card-title h2{
+color: #FEBE10;
+
+}
+.card-course-gold::before{
+    background-color: #FEBE10;
+}
+
+.card-course:hover::before{
+width: 1%;
+
+}
+
+.card-course figure{
+margin: 1rem 0.8rem;
+
+}
+.card-course figure img{
+    width:2rem ;
+    
+}
+
+.box-card-title{
+display: flex;
+}
+
+
+.card-course h2{
+font-size: 1.4rem;
+color: var(--color_N1);
+
+}
+
+.card-course h2 span{
+color:var(--color_N3);
+font-size: 1rem;
+
+
+}
+
+
+.card-course p{
+padding: 0rem 0.7rem;
+
+}
+
+
+
+footer{
+
+height: 13rem;
+background-color: var(--color_N1);
+color:white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 12rem;
+
+}
+
+
+
+
+.lista-icons{
+display: flex;
+justify-content: space-around;
+gap: 2rem;
+padding:0;
+}
+
+
+.lista-icons li{
+list-style-type: none;
+
+}
+
+.lista-icons img{
+
+width: 2rem;
+
+
+}
