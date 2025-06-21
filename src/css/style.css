@@ -52,6 +52,7 @@ justify-content: space-around;
 gap:2%;
 border-radius: var(--border_N1);
 position: relative;
+font-family: var(--font_N1);
 }
 
 
@@ -73,10 +74,50 @@ font-weight: bolder;
     color:var(--color_N2);
 }
 
+.icon{
+display:none;
+width:2rem;
+}
+.text{
+display:block;
+
+
+}
+
+
+
+
+
+@media(max-width: 700px){
+
+.icon{
+display:block;
+
+}
+.text{
+display:none;
+
+}
+
+.encabezado{
+
+display:flex;
+justify-content: center;
+
+}
+
+}
+
+
+
+
+
+
+
 
 /* main section */
 
-/* Sale Asistant */
+/* Box-ia for the vistual Sale Asistant */
 
 
 .box-ia{
@@ -120,11 +161,6 @@ border: 3px solid var(--color_N1);
 content:"Virtual Asistant";
 background-color: white;
 }
-
-
-
-
-
 
 
 .start{
@@ -322,7 +358,16 @@ transform: translateY(1.25rem);
 }
 
 
+@media(max-width: 420px){
 
+
+#sale_asistant_responsive{
+    width: 20rem;
+    transform: translateY(2.7rem);
+    z-index: 2000;
+}
+
+}
 
 .box-btn input{
     width: 80%;
@@ -371,8 +416,7 @@ padding: 0.3rem;
 font-size: 0.7rem;
 }
 
-/* 
-Cards of the box information */
+/* Cards of the box information */
 .card{
 
 min-width: 13rem;
@@ -391,7 +435,7 @@ margin: 0.1rem;
 
 }
 
-/* course */
+/*  section - course */
 
 .course{
 
