@@ -198,7 +198,7 @@ font-family: var(--font_N1);
 .box-start-subcontent figure {
 width: 50%;
 margin:0;
-background-image: url('/src/img/welcome.png');
+background-image: url('./src/img/welcome.png');
 background-position: left top;
 background-size: cover;
 }
